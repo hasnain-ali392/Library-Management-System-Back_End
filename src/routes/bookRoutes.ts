@@ -1,10 +1,10 @@
 import express from 'express';
-import { getBooks, getBookById, addBook, updateBook, deleteBook } from '../controllers/bookController';
-import { authenticate } from '../middleware/authenticate';
-import { authorize } from '../middleware/authorize';
-import { upload } from '../middleware/upload';
-import { validate } from '../middleware/validation';
-import { bookCreateSchema, getBooksQuerySchema } from '../utils/validators';
+import { getBooks, getBookById, addBook, updateBook, deleteBook } from '../controllers/bookController.js';
+import { authenticate } from '../middleware/authenticate.js';
+import { authorize } from '../middleware/authorize.js';
+import { upload } from '../middleware/upload.js';
+import { validate } from '../middleware/validation.js';
+import { bookCreateSchema, getBooksQuerySchema } from '../utils/validators.js';
 
 const router = express.Router();
 

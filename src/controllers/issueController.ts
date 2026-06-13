@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import { Issue } from '../models/Issue';
-import { Book } from '../models/Book';
-import { User } from '../models/User';
-import { Fine } from '../models/Fine';
-import { AuthRequest } from '../middleware/authenticate';
+import { Issue } from '../models/Issue.js';
+import { Book } from '../models/Book.js';
+import { User } from '../models/User.js';
+import { Fine } from '../models/Fine.js';
+import { AuthRequest } from '../middleware/authenticate.js';
 
 // User-initiated book borrowing (without admin authorization)
 export const userBorrowBook = async (req: AuthRequest, res: Response) => {

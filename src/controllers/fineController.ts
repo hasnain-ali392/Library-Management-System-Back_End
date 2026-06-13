@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { Fine } from '../models/Fine';
-import { Issue } from '../models/Issue';
-import { User } from '../models/User';
+import { Fine } from '../models/Fine.js';
+import { Issue } from '../models/Issue.js';
+import { User } from '../models/User.js';
 
 export const getUserFines = async (req: any, res: Response) => {
   const fines = await Fine.find({ userId: req.user._id })

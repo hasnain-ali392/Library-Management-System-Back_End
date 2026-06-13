@@ -1,10 +1,10 @@
 import express from 'express';
-import authRoutes from './authRoutes';
-import bookRoutes from './bookRoutes';
-import issueRoutes from './issueRoutes';
-import fineRoutes from './fineRoutes';
-import reportRoutes from './reportRoutes';
-import userRoutes from './userRoutes';
+import authRoutes from './authRoutes.js';
+import bookRoutes from './bookRoutes.js';
+import issueRoutes from './issueRoutes.js';
+import fineRoutes from './fineRoutes.js';
+import reportRoutes from './reportRoutes.js';
+import userRoutes from './userRoutes.js';
 
 const router = express.Router();
 

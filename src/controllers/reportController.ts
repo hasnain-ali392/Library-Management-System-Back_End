@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { Book } from '../models/Book';
-import { Issue } from '../models/Issue';
-import { User } from '../models/User';
-import { Fine } from '../models/Fine';
+import { Book } from '../models/Book.js';
+import { Issue } from '../models/Issue.js';
+import { User } from '../models/User.js';
+import { Fine } from '../models/Fine.js';
 
 export const getDashboardStats = async (req: Request, res: Response) => {
   const totalBooks = await Book.countDocuments();

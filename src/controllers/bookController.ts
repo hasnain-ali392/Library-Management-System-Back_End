@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Book } from '../models/Book';
+import { Book } from '../models/Book.js';
 
 export const getBooks = async (req: Request, res: Response) => {
   const { search, category, available, page, limit, sort } = res.locals.validated.query as {

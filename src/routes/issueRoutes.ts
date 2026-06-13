@@ -1,9 +1,9 @@
 import express from 'express';
-import { issueBook, returnBook, getUserHistory, getAllIssues, payFine, userBorrowBook } from '../controllers/issueController';
-import { authenticate } from '../middleware/authenticate';
-import { authorize } from '../middleware/authorize';
-import { validate } from '../middleware/validation';
-import { issueBookSchema, returnBookSchema, userBorrowSchema } from '../utils/validators';
+import { issueBook, returnBook, getUserHistory, getAllIssues, payFine, userBorrowBook } from '../controllers/issueController.js';
+import { authenticate } from '../middleware/authenticate.js';
+import { authorize } from '../middleware/authorize.js';
+import { validate } from '../middleware/validation.js';
+import { issueBookSchema, returnBookSchema, userBorrowSchema } from '../utils/validators.js';
 
 const router = express.Router();
 

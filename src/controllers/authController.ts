@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { User } from '../models/User';
-import { config } from '../config/environment';
+import { User } from '../models/User.js';
+import { config } from '../config/environment.js';
 
 const generateToken = (id: string): string => {
   return jwt.sign({ id }, config.jwt.secret, {

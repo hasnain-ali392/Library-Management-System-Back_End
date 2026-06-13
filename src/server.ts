@@ -1,6 +1,6 @@
-import app from './app';
-import { config } from './config/environment';
-import { connectDB } from './config/database';
+import app from './app.js';
+import { config } from './config/environment.js';
+import { connectDB } from './config/database.js';
 
 
 
